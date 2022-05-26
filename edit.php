@@ -60,6 +60,7 @@ if (isset($_POST['update'])) {
                 $stmt->execute();
                 $data = $stmt->fetch();
             ?>
+            <input hidden value='<?= $data['id']; ?>' name='id'>
             <label for="title" class="col-form-label">Subject/Title:</label>
             <div class="input-group">
                 <select class='btn btn-outline-secondary' required name='subject'>
