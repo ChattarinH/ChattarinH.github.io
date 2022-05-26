@@ -18,7 +18,7 @@ if (isset($_POST['update'])) {
     $sql->bindParam(':price', $price);
     $sql->bindParam(':hour', $hour);
     $sql->bindParam(':lecturer', $lecturer);
-    $sql->bindParam(':description', $description1);
+    $sql->bindParam(':description', $description);
     $sql->execute();
     
     if ($sql){
